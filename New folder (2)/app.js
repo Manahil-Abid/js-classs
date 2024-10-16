@@ -183,6 +183,68 @@
 // false == ''  // true
 // null == undefined // true It means null is equal to undefined but not identical.When we define a variable to undefined then we are trying to convey that the variable does not exist . When we define a variable to null then we are trying to convey that the variable is empty.
 
+
+// class 7 
+// 1. assign value in prompt and print through console.log //
+// let Myname = prompt("Enter Your name");
+// console.log("My name is", Myname);
+
+// let Fathername = prompt("Enter Your Fathername");
+// console.log("My name Father name is", Fathername);
+
+// let cnic = prompt("Enter Your CNIC NO");
+// console.log("My cousre name is", cnic);
+
+// let course = prompt("Enter Your Course Name");
+// console.log("My cousre name is", course);
+
+// let mentor = prompt("Enter Your Mentor Name");
+// console.log("My name trainer name is", mentor);
+
+// 2. assign value in prompt and print through doc.write //
+// let Myname = prompt("Enter Your name");
+// document.write("My name is", Myname , "<br>");
+
+// let Fathername = prompt("Enter Your Fathername");
+// document.write("My name Father name is", Fathername , "<br>");
+
+// let course = prompt("Enter Your Course Name");
+// document.write("My cousre name is", course , "<br>");
+
+// let mentor = prompt("Enter Your Mentor Name");
+// document.write("My name trainer name is", mentor , "<br>");
+
+// confirm // display as a conformation box
+// confirm("Are You sure you want to switch this page?")
+
+//Assign value to alert and run prompt //
+// alert("Welcome to our Page");
+// let age = prompt("Enter Your Age Here")
+// console.log(age);
+
+// alert("Enter the value of a");
+// let a = prompt ("Enter a here" , "null");
+// console.log(a);
+// Assign (Nadra value) to alert and assign data one by one in prompt//
+
+//Logical operator//
+// && all value must be true otherwise answer will be false // 
+// let x= 5; 
+// let y= 10;
+// // console.log(x<6 && y>8); // true
+// console.log(x<6 && y>18 && y=="10"); //false
+// console.log(x<3 && y>19 && y=="13"); //false
+
+// logical OR Operator ||  // if any value is true in statement the ans is true //
+// let x = 8;
+// y = 6;
+// console.log (x==="2"|| y<=6 || x == y);
+
+// Logical not operator ! // Not operator return true for false statement or vice-virsa
+// let x = 9;
+// y= 10;
+// console.log(!(x==9)); //false 
+
 //Class 8 //
 // Condition Statement // perform different actions for different decisions
 // if Statement
