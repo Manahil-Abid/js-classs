@@ -329,6 +329,86 @@
 // const death = age > 90 ? "Your life is going to end soon": "Enjoy Your Life";
 // console.log(death);
 
+// class 10
+// loop (repeatation ) CONDITION TRUE LOOP RUN OTHERWISE IT"S NOT //
+// kind (for, For/in , for/off , while ,do while)
+
+
+//Q1
+// for( let i=1; i<=20; i++){
+//     document.write(i,"manahil","<br>");
+// }
+
+
+//Q2 (EVEN)
+// for( let i=1; i<=20; i++){
+//     if(i % 2==0)
+//     document.write(i,"even","<br>");
+// }
+
+
+//Q3(ODD)
+//  for( let i=1; i<=20; i++){
+//   if(i % 2==1)
+//    document.write(i,"odd","<br>");
+//  }
+
+
+//Q4 (REVERSE LOOP)
+// for( let i=20; i>=1; i--){
+//     document.write(i,"<br>");
+//  }
+
+
+//Q5 REVERSE (EVEN)
+// for( let i=20; i>=1; i--){
+// if(i % 2==0)
+//   document.write(i,"even","<br>");
+// }
+
+
+// Q6 REVERSE (ODD)
+//  for( let i=20; i>=1; i--){
+//   if(i % 2==1)
+//   document.write(i,"odd","<br>");
+//  }
+
+// CLASS 11
+// WRITE A FOR LOOP THAT PRINT SQUARE OF A NUMBER 1-10
+// for( let i=1; i<=10; i++){
+//     document.write(i*i ,"<br>");
+// }
+ 
+
+//TABLE GENERATOR
+let n = prompt("enter table number")
+let range = prompt("enter table range")
+for( let  i=1; i<=range; i++){
+document.write(n + "x" + i + '=' +n*i ,"<br>")
+}
+
+
+//NESTED IF CONDITION ; You can have if statements inside if statements, this is called a nested if. ( LIMITATION IN THIS )
+
+// condition are attach with eachother all condition is true then code run
+// let Name = prompt("Enter Your Name");
+// let fatherName = prompt("Enter Your Father Name");
+// let course = prompt("Enter Your Course Name");
+// let campus = prompt("Enter your Campus Name");
+
+// if (course == "Web & App Development" || course =="WMA"){
+// if (campus =="Numaish" || campus =="numaish" || campus =="GULSHAN" || campus =="gulshan" || campus =="BAHADURABAD" || campus =="bahadurabad" || campus=="MALIR" || campus =="malir" || campus =="PAPOSH" || campus =="paposh" || campus =="ALiabad" || campus=="ALIABAD"){
+//     confirm ("Congratulation!! \n You're Enrolled in WMA course");
+// }
+// }
+
+
+
+ 
+
+
+
+
   
 
 
