@@ -449,20 +449,74 @@ for( let  i=1; i<=range; i++){
 document.write(n + "x" + i + '=' +n*i ,"<br>")
 }
 
-
 //NESTED IF CONDITION ; You can have if statements inside if statements, this is called a nested if. ( LIMITATION IN THIS )
 
-// condition are attach with eachother all condition is true then code run
-// let Name = prompt("Enter Your Name");
-// let fatherName = prompt("Enter Your Father Name");
-// let course = prompt("Enter Your Course Name");
-// let campus = prompt("Enter your Campus Name");
+// CLASS # 12
+// ARRAY
 
-// if (course == "Web & App Development" || course =="WMA"){
-// if (campus =="Numaish" || campus =="numaish" || campus =="GULSHAN" || campus =="gulshan" || campus =="BAHADURABAD" || campus =="bahadurabad" || campus=="MALIR" || campus =="malir" || campus =="PAPOSH" || campus =="paposh" || campus =="ALiabad" || campus=="ALIABAD"){
-//     confirm ("Congratulation!! \n You're Enrolled in WMA course");
-// }
-// }
+// Array // it store data in linear form , Index start from 0
+// let myarray = [1,2,3,4,5,6,7,8]; // declaring an array // start 0 se hota ha jahn 1 likha ha woh value initialize 0 hai 
+// // console.log(myarray[0]);
+
+// // if u want to print the 7 value 
+// console.log(myarray[6]);
+
+// Print Id card
+// const studinfo =["Manahil","M.Abid","270600","Female"];
+// console.log(studinfo[2], studinfo[3]);
+
+
+// assign car value 
+// const car =["Saab","Volvo","BMW"];
+// console.log(car[2]);
+
+// assign age value 
+// const age =[]
+// age[0] = 23;
+// age[1] = 26;
+// age[2] = 28;
+// age[3] = 30;
+// console.log(age [2]) // output: 30
+
+
+// length , it start from 1
+// if u want to know array length
+// const array = [1,2,3,4,5,6,7,8];
+// console.log(array.length) // output:8
+// document.write(array.length)
+
+
+// PUSH (ADD ONE OR MORE ELEMENT TO THE END OF ARRAY)
+// const array = [1,2,3,4,5,6];
+// array.push("Manahil");
+// console.log(array);
+
+
+// const studinfo =["Manahil","M.Abid",270600,"Female"];
+// studinfo.push("WMA");
+// console.log(studinfo);
+// console.log(studinfo[4])
+
+// POP ( Remove the last element )
+// const studinfo =["Manahil","M.Abid",270600,"Female"];
+// studinfo.push("WMA");
+// studinfo.pop()
+// console.log(studinfo);
+
+// Shift ( Remove element in start )
+// const studinfo =["Manahil","M.Abid",270600,"Female"];
+// studinfo.shift()
+// console.log(studinfo);
+
+// Unshift (Add one or more element in start)
+//  const studinfo =["Manahil","M.Abid",270600,"Female"];
+// studinfo.unshift("WMA");
+// console.log(studinfo);
+
+
+
+
+
 
 
 
