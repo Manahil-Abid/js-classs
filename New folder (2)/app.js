@@ -566,3 +566,13 @@ document.write(n + "x" + i + '=' +n*i ,"<br>")
 const fruits=['apple','banana','orange','','kiwi','watermelon']
 fruits.splice(3,1,'Pine-apple');
 console.log(fruits)
+
+
+//The slice() method returns selected elements in an array, as a new array.
+// const animals = ['Fly','dog','cats','fox','wolf']
+// const pet = animals.slice(1,3) // agr fox krwana ha uski index value 3 ha laikin hum 4 karein gy tb fox copy karein ga
+// console.log(pet);
+
+// const animals = ['Fly','dog','cats','fox','wolf']
+// const nopets = animals.slice(0,4);
+// console.log(nopetspet);
