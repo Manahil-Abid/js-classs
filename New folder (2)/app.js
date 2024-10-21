@@ -513,24 +513,56 @@ document.write(n + "x" + i + '=' +n*i ,"<br>")
 // studinfo.unshift("WMA");
 // console.log(studinfo);
 
+//Class 13
 
+// Splice
+// PROPERTIES
+// add in Array
+// remove in Array
+// replace in array
+ // SYNTAX
+ // array.splice(index, count, item1, ....., itemX)
 
+ // index	Required.
+//The index (position) to add or remove items.
+//A negative value counts from the end of the array.
 
+//count	Optional. | no of series ko delete krwa chahte ha
+//Number of items to be removed.
 
+//item1, ...,	Optional. | jahn remove karwaya ha wahin add krwa sakhte ha 
+//The new elements(s) to be added.
+// INDEX VALUE : 0 ,  1  ,   2   ,   3   ,   4   //
+// const cars =["audi",'BMW','Prada','Civic','Bigo'];
+// //  1 is indez value 1 is counting k 1 delete krwani ha agr 3 hoga tu shuru k 3no delete hojaye ga
+// cars.splice(1,1);// BMW delete krwa chahte
+// console.log(cars);
 
+//Practice
 
+// const studinfo =["Manahil","M.Abid",'270600',"Female",'WMA','manahil'];
+// studinfo.splice(2,2) // Index k  2 value , or count me 2 value 1 h jo female h or dosri wma ha yeh dono delete hojaye gi
+// console.log(studinfo);
 
- 
+// const studinfo =["Manahil","M.Abid",'270600',"Female",'WMA','manahil'];
+// studinfo.splice(2,1) // Index k bad se count start krta ha
+// console.log(studinfo);
 
+// const studinfo =["Manahil","M.Abid",'270600',"Female",'WMA','manahil'];
+// studinfo.splice(3,2) // Index k bad se count start krta ha
+// console.log(studinfo);
 
+// const studinfo =["Manahil","M.Abid",'270600',"Female",'WMA','manahil'];
+// const remove = studinfo.splice(3,2) // Index k bad se count start krta ha
+// console.log(studinfo);
+// console.log(remove);
 
+//REPLACE
+// const fruits=['apple','banana','orange','kiwi','watermelon']
+// fruits.splice(3,1,'Pine-apple');
+// console.log(fruits)
 
-  
-
-
-
-
-
-
-
-
+//ADD
+const fruits=['apple','banana','orange','','kiwi','watermelon']
+fruits.splice(3,1,'Pine-apple');
+console.log(fruits)
