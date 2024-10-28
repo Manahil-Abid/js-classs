@@ -576,3 +576,67 @@ console.log(fruits)
 // const animals = ['Fly','dog','cats','fox','wolf']
 // const nopets = animals.slice(0,4);
 // console.log(nopetspet);
+
+// Class 14 // JS 1 test
+// let firstName = ['BlueRay','UpCheck','Lojack','Gizoo','Do-Rag'];
+// let lastName = [ 'Zzz','Burp','Dogbone','Droop','John'];
+// let fullName = [];
+
+// //GENERATING FULL NAME
+// for ( let i=0 ; i<firstName.length ; i++){
+//     for ( let j=0 ; j<lastName.length ; j++){
+//         fullName.push(firstName[i]+lastName[j]+"<br>");
+//         // document.write(fullName);
+//     }
+// }
+// for ( let k=0 ; k<fullName.length; k++){
+//     document.write(fullName[k]+"<br>")
+// }
+
+// //Removing commas make another loop
+
+// for ( let i=0 ; i<firstName.length ; i++){
+//     for ( let j=0 ; j<lastName.length ; j++){
+//         fullName.push(firstName[i]+lastName[j]+"<br>");
+//     }
+// }
+// for ( let k=0 ; k<fullName.length; k++){
+//     document.write(fullName[k])
+// }
+
+// JavaScript Array join()
+
+// for ( let i=0 ; i<firstName.length ; i++){
+//     for ( let j=0 ; j<lastName.length ; j++){
+//         fullName.push(firstName[i]+lastName[j]+"<br>");
+//     }
+// }
+// document.write(fullName.join(""));
+
+// Add Value b/t fruits
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.write(fruits.join(" and "));
+
+// Shopping Cart
+// let shopping =['Dress','Coat','Sweater','Jacket'];
+// let discount = "2%";
+// let price    = [ 100,200,300,400 ];
+// let sum =[];
+
+// document.write("<h1>", "ITEMS" ,"\t" ,":", "", " PRICES" ,"</h1>","<br>");
+// for ( let i=0 ; i<shopping.length ; i++){
+//         document.write(shopping[i],"\t");
+//         document.write(price[i],"<br>");
+//  }
+
+// document.write("<h1>", "ITEMS" ,":", "", " PRICES" ,"</h1>","<br>");
+// document.write (shopping[0],":",+ price[0],"<br>");
+// document.write (shopping[1],":",+ price[1],"<br>");
+// document.write (shopping[2],":",+ price[2],"<br>");
+// document.write (shopping[3],":",+ price[3],"<br>");
+// sum =  price[0]+price[1]+price[2]+price[3];
+// document.write("Total Bill", ":" , " 100 + 200 + 300 + 400 = " , sum,"<br>");
+// document.write("Discount" , " : "  ,price[0]/discount[0],"<br>");
+// document.write("Discount" , " : "  ,price[1]/discount[0],"<br>");
+// document.write("Dress = discount = 2% the price will be "  , price[0]/discount[0],"<br>");
+// document.write("Coat = discount = 2% the price will be "  , price[0]/discount[0]);
