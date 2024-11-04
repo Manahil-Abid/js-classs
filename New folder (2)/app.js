@@ -640,3 +640,307 @@ console.log(fruits)
 // document.write("Discount" , " : "  ,price[1]/discount[0],"<br>");
 // document.write("Dress = discount = 2% the price will be "  , price[0]/discount[0],"<br>");
 // document.write("Coat = discount = 2% the price will be "  , price[0]/discount[0]);
+
+// Shopping Cart
+// let shopping =['Dress','Coat','Sweater','Jacket'];
+// let discount =["2","3"] ;
+// let price    = [ 100,200,300,400 ];
+// let sum =[];
+
+// document.write("<h1>", "ITEMS" ,"\t" ,":", "", " PRICES" ,"</h1>","<br>");
+// for ( let i=0 ; i<shopping.length ; i++){
+// document.write(shopping[i],"\t");
+// document.write(price[i],"<br>");
+// }
+
+// document.write("<h1>", "ITEMS" ,":", "", " PRICES" ,"</h1>","<br>");
+// document.write (shopping[0],":",+ price[0],"<br>");
+// document.write (shopping[1],":",+ price[1],"<br>");
+// document.write (shopping[2],":",+ price[2],"<br>");
+// document.write (shopping[3],":",+ price[3],"<br>");
+// sum =  price[0]+price[1]+price[2]+price[3];
+// document.write("Total Bill", ":" , " 100 + 200 + 300 + 400 = " , sum,"<br>");
+// document.write("Discount" , " : "  ,discount[0]/price[0]*100,"<br>");
+// document.write("Discount" , " : "  ,discount[1]/price[1]*100,"<br>");
+// document.write("Dress = discount = 2% the price will be "  ,discount[0]/price[0]*100,"<br>");
+// document.write("Coat = discount = 3% the price will be "  , discount[1]/price[1]*100);
+
+
+// Class 15
+
+// slice in string  //  excess diff part from string
+
+// 1st Method
+//slice (starting value, ending value)
+// let str = 'Saylani Mass IT Training';
+// console.log(str);
+// // str = str.slice( 0 , 7 );
+// // console.log(str); // Saylani
+// str = str.slice(8,15);
+// console.log(str); // blank q k value badal di ha ab sirf saylani reh gya ha , original str ko value saylani assign kia
+
+// //2nd Method
+// let str = 'Saylani Mass IT Training';
+// // console.log(str.slice( 8 , 15));
+// console.log(str.slice(16)); // if u want to run all value you just write a start number.
+
+// 3rd Method // by new variable 
+// let str = 'Saylani Mass IT Training';
+// let str1 = str.slice(4,8);
+// console.log(str1);
+// console.log(str.slice( 8 , 15));// ani
+
+//Changing Case
+
+// convert into LowerCase 
+// let day = prompt("Enter a day");
+// day = day.toLowerCase();
+// if( day == 'friday' || day == 'sunday' || day == 'wednesday' || day =="Thursday" || day == 'Saturday'){
+//     console.log("Working Days");
+// }
+// else if( day == ' friday' || day == ' Sunday'){
+//     console.log("Holiday");
+// }
+// else{
+//     console.log('Sorry! invalid');
+// }
+
+// convert into UpperCase 
+// let day = prompt("Enter a day");
+// day = day.toUpperCase();
+// if( day == 'TUESDAY' || day == 'MONDAY' || day == 'WEDNESDAY' || day =="THURSDAY" || day == 'SATURDAY'){
+//     document.write("Working Days");
+// }
+// else if( day == ' FRIDAY ' || day == ' SUNDAY '){
+//     document.write("Holiday");
+// }
+// else{
+//     document.write('Sorry! invalid');
+// }
+
+// run month name 
+// let month =  prompt("Enter a month name?");
+// let charsInMonth = month.length ;
+// if(charsInMonth >= 3){
+//  document.write(month.slice(0,3))
+// }
+
+// let str = prompt ("Enter some text");
+// let numChars =str.length;
+// for (let i =0 ; i< numChars ; i++){
+//     if (log = str.slice(i,i+2)){
+//         document.write(log);
+//         break;
+//     }
+// }
+
+// Book Example
+
+// let str = prompt ("Enter some text");
+// let numChars =str.length;
+// for (let i =0 ; i< numChars ; i++){
+//     if (str.slice(i, i + 2) === "  "){
+//         document.write(str);
+
+//     alert("No Double Spaces!");
+//         break;
+//     }
+//     else {
+//         alert ("double spaces!")
+//     }
+// }
+
+// Class 16 // 
+
+//INDEX.OF //  is mein hum [ string , array ] likhte h index ki [position] batata hai//
+
+// let str = "Saylani Mass IT Training";
+// let index = str.indexOf("Mass");
+// console.log(index); // output 8 
+
+
+
+// let str = "Saylani Mass IT Training";
+// let index = str.indexOf("mass");
+// console.log(index); // output -1 // if the value is not found its return -1
+
+// let str = "Saylani Mass IT Training";
+// let index = str.indexOf("ss");
+// console.log(index); // output 10
+
+
+// let str = "Saylani Mass IT Training";
+// let index = str.indexOf("a");
+// console.log(index); // output 1 // Catch 1 character
+
+//Example
+
+// let products = ['makhan malai', 'pops star' , 'chicken ringo', 'potato stick' , 'fryo'];
+// let find  = prompt ("What do you want to eat? \nmakhan malai, \npops star \nchicken ringo \npotato stick \nfryo");
+// for ( let i = 0 ; i  < products.length ; i++){
+//     if ( find == products[i]){
+//         document.write("Snacks Found!!")
+//         break;
+//     }
+  
+//     else {
+//         document.write("Snacks not Found!!")
+//         break;
+//     }
+// }
+
+// indexOf used for searching characters in a string.
+// charAt used for accessing characters in a string.
+
+// Char.AT // return specified index of string...........
+
+//  let str = "Saylani Mass IT Training";
+//  let char = str.charAt(8);
+//  document.write(char); // output  (M)
+
+
+// Example of a validation on a login page
+// let password = prompt ("Enter a password")
+// if (isNaN (password.charAt(0))){
+// document.write("password must start with letter")
+// }
+// else {
+//     document.write("password Verified")
+// }
+
+//Class 17
+
+//NAN (not a number); // // ik bh number me character agya tu woh true hojaye ga // or agr number h tu false 
+
+//LastindexOf // ending wali position ko catch krta ha
+
+// let str = "hello world javascript world";
+// let index = str.lastIndexOf("world");
+// console.log(index); // 23
+
+// let str = "hello world javascript world";
+// let index = str.indexOf("world");
+// console.log(index); // 6
+
+// let str = "hello world javascript";
+// let index = str.lastIndexOf("world");
+// console.log(index); // 6 
+
+
+//TOSTRING // convert array, kisi bh datatype ko  to string k zariye badal sakhte ha
+// Convert data type into string
+
+// Number toString
+// let num = 56;
+// console.log(num);
+// console.log(num.toString());
+
+// let num = 56;
+// console.log(num + 2); // 58
+// console.log(num.toString());
+
+//num toString
+
+// let num = 56;
+// console.log(num + 2); // 58
+// console.log(num.toString() + 2);
+
+//boolean toString
+// let bool = true;
+// console.log(bool);
+// console.log(bool.toString()); //  True
+
+//Array toString
+
+// let fruits = [ 'Apple','Grapes','Banana','kiwi'];
+// console.log(fruits);
+// console.log(fruits.toString());
+
+// Concat( ); join multiple array or String and return result // do ya is sey ziada cheezon ko print karwana ho tb hum + concatenation karwana
+
+// let fruits = [ 'Apple','Grapes','Banana'];
+// let veggies = ['Potato','Tomato','bringer'];
+// let pkgFood = [ 'Nuggets','Fries','Frozen']
+// // document.write(fruits + veggies + pkgFood); // if we dont use concat 
+// let combinedArray = fruits.concat(veggies , pkgFood);
+// console.log(combinedArray);
+// console.log(pkgFood);
+
+// Greeting Code
+
+// let greeting = " Asalamo Aliakum ";
+// let userName = prompt (" Enter Your Name ");
+// let gender = prompt (" Enter Your Gender ");
+// gender = gender.toLowerCase();
+// let combinedArray = greeting.concat(userName);
+// if ( gender == "male")
+// {
+// document.write( combinedArray, " Sir ")
+// }
+// else if  ( gender == 'female') {
+//     document.write(  combinedArray ," mam ")
+// }
+// else {
+//     document.write(" invalid !! ")
+// }
+
+//  Replace  //
+
+//  let arr = ['car','auto','taxi'];   //MUTABLE
+//  console.log(arr);
+//  arr[0] = 'bus'
+//  console.log(arr); // replace car to bus
+
+//  let str =  'JavaScript';  // IMMUTABLE
+//  console.log(str);
+//  str[0] = 'g'
+//  console.log(str); // not change 
+
+//  let str =  'JavaScript';  // Replace
+//  console.log(str);
+//  console.log(str.replace("J" , "G"));
+
+//  let str =  'Hello world , welcome to our world';  // Replace
+//  console.log(str);
+//  console.log(str.replace("world" , "javascript")); // sirf 1 ko karein ga
+
+// let str = 'Hello world war II, Welcome to our world war II';
+// console.log(str);
+// console.log(str.replaceAll("world war II" , "seconde war ")); 
+
+
+//BOOK Example
+// let text = prompt ("Enter a text");
+// for (let i = 0 ; i < text ; i++ ){
+// if( text.charAt(i) ==="!"){
+// console.log(i);
+// alert ("Exclamation Found")
+// break;
+// }
+// }
+
+// ASSIGNMENT
+
+//write a program to take a number in a variable do the required arthemetic to display the following result in your browser.
+
+// let a = 10;
+// document.write("The value of a is =",a,"<br>","<br>","<br>");
+// document.write("The value of ++a is" ,11,"<br>");
+// document.write("Now the value of a is " ,++a,"<br>","<br>","<br>");
+// document.write("The value of ++a is" ,11,"<br>");
+// document.write("Now the value of a is " ,++a,"<br>","<br>","<br>");
+// document.write("The value of --a is" ,11,"<br>");
+// document.write("Now the value of a is " ,--a,"<br>","<br>","<br>");
+// document.write("The value of a-- is" ,11,"<br>");
+// document.write("Now the value of a is " ,--a,"<br>");
+
+//What will be the output in variables a, b & result after execution of the following script: 
+//var a = 2, b = 1; var result = --a - --b + ++b + b--; 
+//Explain the output at each stage:
+// --a; --a - --b; --a - --b + ++b; --a - --b + ++b + b--; 
+
+// let a = 2, b = 1;
+// document.write('a is =',a,"<br>"); //2
+// document.write('b is =',b,"<br>");// 1
+// document.write("The value of --a is",--a,"<br>"); // 1
+// document.write("The value of --a is now = ",--a ,' and --b is now  = ',--b," (--a - --b) is = " , a - b ,"<br>"); // a = 1 , b = 0 // 1 - 0 = 1
