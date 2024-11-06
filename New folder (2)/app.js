@@ -919,28 +919,71 @@ console.log(fruits)
 // }
 // }
 
-// ASSIGNMENT
+// x---------------------------------------------------------------x //
+//  Class 18  // 
 
-//write a program to take a number in a variable do the required arthemetic to display the following result in your browser.
+// Replace All ### , *** , javascrpit into empty string///
 
-// let a = 10;
-// document.write("The value of a is =",a,"<br>","<br>","<br>");
-// document.write("The value of ++a is" ,11,"<br>");
-// document.write("Now the value of a is " ,++a,"<br>","<br>","<br>");
-// document.write("The value of ++a is" ,11,"<br>");
-// document.write("Now the value of a is " ,++a,"<br>","<br>","<br>");
-// document.write("The value of --a is" ,11,"<br>");
-// document.write("Now the value of a is " ,--a,"<br>","<br>","<br>");
-// document.write("The value of a-- is" ,11,"<br>");
-// document.write("Now the value of a is " ,--a,"<br>");
+// let text = " In ###JavaScript, `Math.round() ` is a method that rounds a number to the nearest integer javaScript. If thefractional part ###of the number is 0.5 ***orgreater javaScript, it rounds up to the next integer; if it's less than 0.5, it*** rounds down.javaScript ";
+// // console.log(text);
+// text = text.replaceAll("javaScript","");
+// let text1 = text.replaceAll("###","");
+// // console.log(text1);
+// let text2 = text1.replaceAll("***","");
+// console.log(text2);
 
-//What will be the output in variables a, b & result after execution of the following script: 
-//var a = 2, b = 1; var result = --a - --b + ++b + b--; 
-//Explain the output at each stage:
-// --a; --a - --b; --a - --b + ++b; --a - --b + ++b + b--; 
+// x---------------------------------------------------------------x //
 
-// let a = 2, b = 1;
-// document.write('a is =',a,"<br>"); //2
-// document.write('b is =',b,"<br>");// 1
-// document.write("The value of --a is",--a,"<br>"); // 1
-// document.write("The value of --a is now = ",--a ,' and --b is now  = ',--b," (--a - --b) is = " , a - b ,"<br>"); // a = 1 , b = 0 // 1 - 0 = 1
+//Global flag (g); yeh tamaam ko replace krta hai // to replace every instance of a substring within a string. // string.replace(/pattern/g,"newSubstring")
+
+// let text = "The cat sat on the mat.The cat is happy";
+// let textNew =text.replace(/cat/g,"dog"); // g is called Global Flag
+// console.log(textNew); // dog , dog 
+
+// x---------------------------------------------------------------x //
+
+                         // Math.round //
+
+//Math.round(); decimal value ko roundoff krk integer form me show krta hai , 4.76 = 5 //
+/* method that rounds a number to the nearest integer// 4.5 ha ya issey ziada = 5 */
+ 
+// let x = 25.73;
+// console.log(Math.round(25.73)); // 26 
+// console.log(Math.round(25.37)); // 25
+
+
+//Example //
+// let billAmount = 25.73;
+// let roundBill = Math.round(billAmount);
+// console.log(roundBill); // 26
+
+
+// let originalPrice = 49.99;
+// let discountPercentage = 15;
+// let discountAmount = (originalPrice*discountPercentage)/100;// 7.4985
+// let roundDiscount = Math.round(discountAmount);
+// console.log(roundDiscount); //7
+
+// x---------------------------------------------------------------x //
+
+                // Math.ceil() // 
+/* Term ceil shortform "ceiling" yeh value nh dekhta ha direct round up krta decimal value nh dekhta */
+
+// let x = 25.73;
+// console.log(Math.ceil(25.73)); // 26 
+// console.log(Math.ceil(25.23)); // 26
+// console.log(Math.ceil(25.05)); // 26 
+// console.log(Math.ceil(25.00)); // 25
+
+
+// let items = 17;
+// let boxCapacity = 10;
+// let boxesNeeded = Math.ceil(items/boxCapacity);
+// console.log(boxesNeeded);
+
+// x---------------------------------------------------------------x //
+
+//Email Generator
+// let userName = prompt("Enter Your Name");
+// let genEmail = userName + userName.length + "@gmail.com";
+// console.log("Here Your Email Sir",genEmail);
