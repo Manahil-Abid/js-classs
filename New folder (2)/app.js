@@ -987,3 +987,64 @@ console.log(fruits)
 // let userName = prompt("Enter Your Name");
 // let genEmail = userName + userName.length + "@gmail.com";
 // console.log("Here Your Email Sir",genEmail);
+
+// class 19 
+
+//                      Math.Floor
+// ignore decimal return direct number 
+
+// console.log(Math.floor(4.9)) // 4
+// console.log(Math.floor(-4.9)) // -5 
+// console.log(Math.floor(-4.3)) // -5  
+
+// x---------------------------------------------------------------x //
+
+                     // Math.random   //    
+// generate random number at your screen start from ( 0 - 1 );
+/* Math.random() is a JavaScript function that returns a pseudorandom number between 0 (inclusive) and 1 (exclusive). It's a built-in function of the Math object, and it's commonly used to generate random numbers for various purposes. */ 
+
+
+// console.log(Math.random()); // Output: 0.123456789 (a random number between 0 and 1)
+
+// x---------------------------------------------------------------x //
+
+// Generate Dice Number //
+
+// let diceRoll = Math.round(Math.random()*5)+1;  // 5 is a range // +1
+// document.write("Dice Roll " , diceRoll);
+
+/*- `Math.random() generates a random number between 0 (inclusive) and 1 (exclusive).
+Multiplying it by 5 scales the range to 0-5.
+Math.round() rounds the result to the nearest whole number, so you get an integer between 0 and 5.
+Adding 1 shifts the range to 1-6. */
+
+// x---------------------------------------------------------------x //
+
+// Generate Heads/Tails Random //
+
+// By teranary Method //
+
+// let coinToss = Math.random()<0.5 ? "Heads" : "Tails" ;
+// console.log(coinToss);
+
+                   // or //
+
+// By if/else  Method //
+
+// let coinToss = Math.random();
+// if (coinToss < 0.5){
+//     document.write("Heads");
+// }
+// else {
+//     document.write("Tails");
+// }
+
+// x---------------------------------------------------------------x //
+
+//Example 4: Randomizing the selection of an element from an array
+
+// let colors = ['red', 'green', 'blue', 'yellow'];
+// let randomColor = colors[Math.floor(Math.random() * colors.length)];
+// console.log(randomColor);
+
+// x---------------------------------------------------------------x //
