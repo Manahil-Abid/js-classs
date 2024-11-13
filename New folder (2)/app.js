@@ -1048,3 +1048,116 @@ Adding 1 shifts the range to 1-6. */
 // console.log(randomColor);
 
 // x---------------------------------------------------------------x //
+// let password = '';  
+// for(let i = 0 ; i < 12 ; i++)
+// { password+=String.fromCharCode(Math.floor(Math.random()* 62) +48); }  
+// document.write(password); 
+// x--------------------------------------------------------------------------------------------------------------------------------------------x //
+
+//Background Generator;
+// let letter ="0123456789ABCDEF";
+// let color = "#";
+// for (let i = 0 ; i < 6 ; i++){
+//     color += letter[Math.floor(Math.random()* 16)];
+// }
+// document.body.style.backgroundColor = color;
+// x--------------------------------------------------------------------------------------------------------------------------------------------x //
+
+//String.fromCharCode() is a JavaScript method used to create a string from a sequence of Unicode character codes.//
+
+//Example 1: Single Character
+
+// let char = String.fromCharCode(65);
+// console.log(char); // Outputs: 'A'
+
+//Example 2: Multiple Charac
+// let string = String.fromCharCode(72, 101, 108, 108, 111);
+// console.log(string); // Outputs: 'Hello'
+
+// 1. parseInt() Function // 
+// parseInt() function ka use kisi string ko integer mein convert karne ke liye hota hai.
+// Agar string mein koi non-numeric characters hon, toh parseInt() unhe ignore kar deta hai aur sirf numeric part ko convert karta hai.
+
+// let str = "12345";
+// let num = parseInt(str);
+// console.log(num);  // Output: 12345
+
+// let str = "12345";
+// let str2 = 12345; 
+// let num = parseInt(str) + str2;  // First, convert str to number, then add
+// console.log(num);  // Output: 24690
+
+                          // 3 Method ///
+// let num = +prompt("enter a number");
+// let num2 = +prompt ("enter a number");
+// let result = num + num2 ;
+// document.write(result); 
+
+// let str = +"12345";
+// let str2 = 12345; 
+// let num = str + str2;  // First, convert str to number, then add
+// console.log(num);  // Output: 24690
+
+// // 2 Method ///
+// let num =parseInt(prompt("enter a number"));
+// let num2 =parseInt(prompt ("enter a number"));
+// let result = num + num2 ;
+// document.write(result); 
+
+// let str = parseInt("12345");
+// let result = str + 9;
+// document.write(result); 
+// x--------------------------------------------------------------------------------------------------------------------------------------------x //
+
+// RADIX 
+//Radix ke zariye, hum string ko ek specific number base mein convert karte hain.
+/*
+Base 2
+(Binary)
+Binary (Base 2): Agar aap binary number ko decimal mein convert karna chahte hain: 
+Base 10 positive integer y decimal
+(Decimal, jo common hai) Decimal (Base 10) (Default): Agar aap decimal number ko convert karte hain, toh radix ko 10 specify karna zaroori nahi hota. Agar aap radix nahi dete, toh JavaScript default roop se base 10 hi samjhega.
+Base 16 decimal
+(Hexadecimal) Hexadecimal (Base 16): Hexadecimal system mein numbers 0 se 9 aur A se F tak hotay hain.
+*/ 
+
+//(Binary)
+// let binaryStr = "1010";  // Binary number  //  jb num ho 
+// let decimalNum = parseInt(binaryStr, 2);  // Convert to decimal (base 10)
+// console.log(decimalNum);  // Output: 10
+
+//(Hexadecimal)
+// let hexStr = "1F";  // Hexadecimal number  // agr sirf num catch krna h a tu 10 dengy laikin agr alphabet bh chahie tu16 dein gy
+// let decimalNum = parseInt(hexStr, 16);  // Convert to decimal (base 10)
+// console.log(decimalNum);  // Output: 31
+
+// x--------------------------------------------------------------------------------------------------------------------------------------------x //
+
+//ParseFloat 
+// //let num = parseFloat("3.14");
+// console.log(num);  // Output: 3.14
+
+
+//Conversion with Non-Numeric Characters
+// let num = parseFloat("12.34abc");
+// console.log(num);  // Output: 12.34
+
+// x--------------------------------------------------------------------------------------------------------------------------------------------x //
+
+//DOM (Document Object Model)
+//getElementById(): Use this method to target an element by its unique ID.
+//getElementsByClassName(): Use this to target elements by class name. Returns a live HTMLCollection.
+//getElementsByTagName(): Use this to target elements by tag name. Returns a live HTMLCollection.
+//querySelector(): Use this to target a single element by CSS selector (ID, class, or tag).
+//querySelectorAll(): Use this to target multiple elements by CSS selector (ID, class, or tag) and returns a static NodeList.
+
+document.getElementById("para") .innerHTML ="JavaScript";
+
+
+
+
+
+
+
+
+
